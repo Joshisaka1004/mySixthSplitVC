@@ -36,11 +36,11 @@ class DetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         myImageView.image = UIImage(named: daten.myPics[index])
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        return 2
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCurrent = myDetailTableView.dequeueReusableCell(withIdentifier: "myDetailTableCells", for: indexPath)
-        myCurrent.textLabel?.text = "Bayern München"
+        myCurrent.textLabel?.text = daten.spiele[index][indexPath.row]
         if UIScreen.main.bounds.size.width >= 768 {
             myCurrent.textLabel?.font = UIFont(name: "Avenir Next", size: 34.0)
         } else {

@@ -10,12 +10,14 @@ import UIKit
 
 class myData {
     var spieltage = [Int]()
+    var spiele = [[String]]()
     var myPics = [String]()
     init() {
         myPics = ["cupOfTea", "tea", "myBackG"]
         for l in 1...34 {
             spieltage.append(l)
         }
+        spiele.append(["Bayern München - Bayer Leverkusen", "Mainz 05 - Hannover 96"])
     }
  
 }

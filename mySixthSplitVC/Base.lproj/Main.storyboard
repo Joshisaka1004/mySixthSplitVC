@@ -15,6 +15,21 @@
         </array>
     </customFonts>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="Dg2-g0-img">
+            <objects>
+                <viewController id="o8A-lb-kVs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PNr-mE-syL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="sFF-Sg-iHZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dei-GI-Y4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="562"/>
+        </scene>
         <!--DetailVC-->
         <scene sceneID="rPf-TU-T8A">
             <objects>
@@ -80,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="REa-iZ-vge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="539.28035982008998"/>
+            <point key="canvasLocation" x="994" y="564"/>
         </scene>
         <!--FUSSBALL-BUNDESLIGA-->
         <scene sceneID="7Oy-Ik-dH4">
@@ -145,7 +160,7 @@
                 <splitViewController id="tuC-aQ-PSy" sceneMemberID="viewController">
                     <connections>
                         <segue destination="JcG-jm-wT1" kind="relationship" relationship="masterViewController" id="We9-e0-FOb"/>
-                        <segue destination="QIh-eb-CLQ" kind="relationship" relationship="detailViewController" id="tz7-sy-fvF"/>
+                        <segue destination="o8A-lb-kVs" kind="relationship" relationship="detailViewController" id="vzg-B3-cXB"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6u-42-69f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,7 +171,4 @@
     <resources>
         <image name="myBackG" width="375" height="667"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="fsZ-hi-7kM"/>
-    </inferredMetricsTieBreakers>
 </document>
